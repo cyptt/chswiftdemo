@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="188" id="XcQ-78-Ccl" customClass="JFMineCell" customModule="JFMeiTuan_Swift5" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="188"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XcQ-78-Ccl" id="hmH-Uh-JLd">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="188"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7FT-ao-6YT">
+                        <rect key="frame" x="20" y="187.5" width="347" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="kz7-4x-649"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lU-jH-PGP">
+                        <rect key="frame" x="15" y="5" width="372" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Eah-Zy-FS3"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="美团钱包">
+                                <attributes>
+                                    <font key="NSFont" size="13" name="PingFangSC-Semibold"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="naQ-55-7tK">
+                        <rect key="frame" x="15" y="35" width="372" height="152"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4vH-4G-eCg">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="9lU-jH-PGP" secondAttribute="trailing" id="9eg-b1-Kn1"/>
+                    <constraint firstItem="9lU-jH-PGP" firstAttribute="leading" secondItem="hmH-Uh-JLd" secondAttribute="leading" constant="15" id="AYR-e9-hr9"/>
+                    <constraint firstAttribute="bottom" secondItem="naQ-55-7tK" secondAttribute="bottom" constant="1" id="ToI-ic-2Le"/>
+                    <constraint firstItem="naQ-55-7tK" firstAttribute="leading" secondItem="hmH-Uh-JLd" secondAttribute="leading" constant="15" id="Xmn-sB-ZOL"/>
+                    <constraint firstItem="9lU-jH-PGP" firstAttribute="top" secondItem="hmH-Uh-JLd" secondAttribute="top" constant="5" id="Y8Z-6t-ESp"/>
+                    <constraint firstAttribute="bottom" secondItem="7FT-ao-6YT" secondAttribute="bottom" id="ZcN-9X-3Lx"/>
+                    <constraint firstAttribute="trailing" secondItem="naQ-55-7tK" secondAttribute="trailing" id="btz-Kf-yMg"/>
+                    <constraint firstAttribute="trailing" secondItem="7FT-ao-6YT" secondAttribute="trailing" constant="20" id="iab-nj-Evn"/>
+                    <constraint firstItem="naQ-55-7tK" firstAttribute="top" secondItem="9lU-jH-PGP" secondAttribute="bottom" id="pIh-6i-rL6"/>
+                    <constraint firstItem="7FT-ao-6YT" firstAttribute="leading" secondItem="hmH-Uh-JLd" secondAttribute="leading" constant="20" id="pez-aL-2DF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomLineView" destination="7FT-ao-6YT" id="FGk-AI-OnE"/>
+                <outlet property="cellTitleClass" destination="9lU-jH-PGP" id="kTj-vZ-Qn1"/>
+                <outlet property="collectionView" destination="naQ-55-7tK" id="IYM-Bc-ROA"/>
+                <outlet property="collectionViewLayout" destination="4vH-4G-eCg" id="R66-0a-uMm"/>
+            </connections>
+            <point key="canvasLocation" x="-129.71014492753625" y="99.776785714285708"/>
+        </tableViewCell>
+    </objects>
+</document>

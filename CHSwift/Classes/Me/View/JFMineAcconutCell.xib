@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="109" id="hd7-I4-8HL" customClass="JFMineAcconutCell" customModule="JFMeiTuan_Swift5" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hd7-I4-8HL" id="Vlv-Yq-uhR">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ptm_home_account_background" translatesAutoresizingMaskIntoConstraints="NO" id="73d-sp-jMA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ptm_home_account_arc" translatesAutoresizingMaskIntoConstraints="NO" id="U5S-yR-qgO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="109"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mineHeadIcon" translatesAutoresizingMaskIntoConstraints="NO" id="AeH-yj-7t1">
+                        <rect key="frame" x="130" y="24.5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="eA6-rS-1jn"/>
+                            <constraint firstAttribute="height" constant="60" id="qe6-Cm-vAV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="凯里欧文" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPP-jP-OzZ">
+                        <rect key="frame" x="0.0" y="89" width="320" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="k2v-2A-PfL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="73d-sp-jMA" firstAttribute="top" secondItem="Vlv-Yq-uhR" secondAttribute="top" id="1je-85-1g7"/>
+                    <constraint firstItem="U5S-yR-qgO" firstAttribute="top" secondItem="Vlv-Yq-uhR" secondAttribute="top" id="8Xf-7g-pg4"/>
+                    <constraint firstAttribute="bottom" secondItem="73d-sp-jMA" secondAttribute="bottom" id="C5M-bT-g1r"/>
+                    <constraint firstItem="73d-sp-jMA" firstAttribute="leading" secondItem="Vlv-Yq-uhR" secondAttribute="leading" id="FKS-rc-SXZ"/>
+                    <constraint firstAttribute="bottom" secondItem="mPP-jP-OzZ" secondAttribute="bottom" id="JEN-xW-Vfp"/>
+                    <constraint firstAttribute="trailing" secondItem="73d-sp-jMA" secondAttribute="trailing" id="KrU-UT-g5m"/>
+                    <constraint firstItem="U5S-yR-qgO" firstAttribute="leading" secondItem="Vlv-Yq-uhR" secondAttribute="leading" id="NvO-4B-z2E"/>
+                    <constraint firstItem="mPP-jP-OzZ" firstAttribute="leading" secondItem="Vlv-Yq-uhR" secondAttribute="leading" id="QYG-wr-yjU"/>
+                    <constraint firstAttribute="trailing" secondItem="mPP-jP-OzZ" secondAttribute="trailing" id="Tut-4Y-Hw2"/>
+                    <constraint firstItem="AeH-yj-7t1" firstAttribute="centerY" secondItem="Vlv-Yq-uhR" secondAttribute="centerY" id="Wwu-f4-5Ly"/>
+                    <constraint firstAttribute="trailing" secondItem="U5S-yR-qgO" secondAttribute="trailing" id="hna-8g-IcC"/>
+                    <constraint firstItem="AeH-yj-7t1" firstAttribute="centerX" secondItem="Vlv-Yq-uhR" secondAttribute="centerX" id="kyA-9q-8Vf"/>
+                    <constraint firstAttribute="bottom" secondItem="U5S-yR-qgO" secondAttribute="bottom" id="mUv-NI-pSM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="34" y="86.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mineHeadIcon" width="200" height="200"/>
+        <image name="ptm_home_account_arc" width="375" height="189"/>
+        <image name="ptm_home_account_background" width="375" height="135"/>
+    </resources>
+</document>
